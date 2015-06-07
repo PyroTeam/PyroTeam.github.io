@@ -298,6 +298,43 @@
 				opacity: 1;
 			}
 
+
+	ul.sponsor {
+		cursor: default;
+		padding-bottom: 2em;
+	}
+
+		ul.sponsor li {
+			display: inline-block;
+			line-height: 1em;
+			padding: 0.5em 1em;
+		}
+
+			ul.sponsor li:first-child {
+				padding-left: 0;
+			}
+
+			ul.sponsor li span {
+				display: none;
+			}
+
+			ul.sponsor li a {
+				text-decoration: none;
+				font-size: 2em;
+				color: inherit;
+				opacity: 1.0;
+				-moz-transition: all 0.35s ease-in-out;
+				-webkit-transition: all 0.35s ease-in-out;
+				-o-transition: all 0.35s ease-in-out;
+				-ms-transition: all 0.35s ease-in-out;
+				transition: all 0.35s ease-in-out;
+			}
+
+			ul.sponsor li a:hover {
+				color: inherit;
+				opacity: 0.8;
+			}
+
 	ul.icons_contact {
 		cursor: default;
 		padding-bottom: 2em;
@@ -566,7 +603,8 @@
 			}
 
 			.wrapper.style3 p {
-				font-size: 1.6em;
+				/*font-size: 1.6em;*/
+				text-align: justify;
 			}
 
 		.wrapper.style4 {
@@ -596,7 +634,7 @@
 	#header {
 		color: white;
 		height: 4em;
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(0, 0, 0, 0.8);
 	}
 
 		#header .container {
@@ -664,6 +702,7 @@
 
 				#nav > ul > li.active a {
 					color: white;
+					font-weight: bold;
 				}
 
 				#nav > ul > li > ul {
