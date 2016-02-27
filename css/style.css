@@ -549,21 +549,25 @@
 		padding: 6em 0em 4em 0em;
 	}
 
-		.wrapper.style1 {
+		.wrapper.header {
 			padding: 0em;
-			background: #222222 url(../images/banner.jpg) no-repeat;
+		}
+
+		.wrapper.banner {
+			padding: 0em;
+			background: #FFFFFF url(../images/arpl/logo_wide.png) no-repeat;
 			background-size: cover;
 		}
 
-		.wrapper.style2 {
+		.wrapper.associaiton {
 			background: #f2f2f2;
 		}
 
-			.wrapper.style2 .major {
+			.wrapper.association .major {
 				text-align: left !important;
 			}
 
-				.wrapper.style2 .major h2 {
+				.wrapper.association .major h2 {
 					display: block;
 					margin-bottom: 0.70em;
 					letter-spacing: 1px;
@@ -573,14 +577,14 @@
 					font-weight: 400;
 				}
 
-				.wrapper.style2 .major .byline {
+				.wrapper.association .major .byline {
 					letter-spacing: normal;
 					line-height: 1.6em;
 					text-transform: capitalize;
 					font-size: 1.4em;
 				}
 
-			.wrapper.style2 h3 {
+			.wrapper.association h3 {
 				display: block;
 				margin-bottom: 1em;
 				letter-spacing: 1px;
@@ -590,19 +594,19 @@
 				font-weight: 400;
 			}
 
-		.wrapper.style3 {
+		.wrapper.robocup {
 			padding-bottom: 6em;
 			background: #002395;
 			text-align: center;
 			color: white;
 		}
 
-			.wrapper.style3 .container {
+			.wrapper.robocup .container {
 				padding-left: 6em;
 				padding-right: 6em;
 			}
 
-			.wrapper.style3 p {
+			.wrapper.robocup p {
 				/*font-size: 1.6em;*/
 				text-align: justify;
 			}
