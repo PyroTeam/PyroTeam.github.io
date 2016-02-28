@@ -1,0 +1,1092 @@
+/* Imports */
+@import url("font-awesome.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+/* Colors */
+/* Basic */
+/* line 17, ../sass/myStyle.scss */
+body {
+  background: #222222;
+}
+
+/* line 21, ../sass/myStyle.scss */
+body.loading * {
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
+/* line 34, ../sass/myStyle.scss */
+body, input, select, textarea {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+  line-height: 1.65em;
+}
+
+/* line 42, ../sass/myStyle.scss */
+a {
+  color: #002395;
+  text-decoration: underline;
+}
+
+/* line 47, ../sass/myStyle.scss */
+strong, b {
+  font-weight: 700;
+}
+
+/* line 51, ../sass/myStyle.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 55, ../sass/myStyle.scss */
+p, ul, ol, dl, table, blockquote {
+  margin: 0 0 2em 0;
+}
+
+/* line 59, ../sass/myStyle.scss */
+p {
+  line-height: 1.8em;
+}
+
+/* line 63, ../sass/myStyle.scss */
+p.medium {
+  font-size: 1.4em;
+}
+
+/* line 67, ../sass/myStyle.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-weight: 700;
+}
+
+/* line 72, ../sass/myStyle.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 77, ../sass/myStyle.scss */
+h2 {
+  font-size: 1.5em;
+}
+
+/* line 81, ../sass/myStyle.scss */
+h3 {
+  font-size: 1.25em;
+}
+
+/* line 85, ../sass/myStyle.scss */
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+
+/* line 91, ../sass/myStyle.scss */
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+
+/* line 97, ../sass/myStyle.scss */
+hr {
+  border-top: solid 1px #002395;
+  border: 0;
+  margin-bottom: 1.5em;
+}
+
+/* line 103, ../sass/myStyle.scss */
+blockquote {
+  border-left: solid 0.5em #002395;
+  font-style: italic;
+  padding: 1em 0 1em 2em;
+}
+
+/* line 109, ../sass/myStyle.scss */
+section.special, article.special {
+  text-align: center;
+}
+
+/* line 113, ../sass/myStyle.scss */
+header.major {
+  padding-bottom: 3em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 119, ../sass/myStyle.scss */
+header.major h2 {
+  font-size: 2.6em;
+  font-weight: 700;
+}
+
+/* line 124, ../sass/myStyle.scss */
+header.major .byline {
+  display: block;
+  padding-top: 1em;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+}
+
+/* line 131, ../sass/myStyle.scss */
+footer > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 135, ../sass/myStyle.scss */
+footer.major {
+  padding-top: 3em;
+}
+
+/* Form */
+/* line 141, ../sass/myStyle.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  border: solid 1px #002395;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0.75em;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* line 160, ../sass/myStyle.scss */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #002395;
+}
+
+/* line 167, ../sass/myStyle.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  line-height: 1em;
+}
+
+/* line 173, ../sass/myStyle.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+  position: relative;
+  top: 3px;
+}
+
+/* line 180, ../sass/myStyle.scss */
+:-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 185, ../sass/myStyle.scss */
+::-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 190, ../sass/myStyle.scss */
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* line 195, ../sass/myStyle.scss */
+.formerize-placeholder {
+  color: rgba(85, 85, 85, 0.5) !important;
+}
+
+/* Image */
+/* line 201, ../sass/myStyle.scss */
+.image {
+  border: 0;
+  position: relative;
+}
+
+/* line 206, ../sass/myStyle.scss */
+.image.fit {
+  display: block;
+}
+
+/* line 210, ../sass/myStyle.scss */
+.image.fit img {
+  display: block;
+  width: 100%;
+}
+
+/* line 215, ../sass/myStyle.scss */
+.image.feature {
+  display: block;
+  margin: 0 0 2em 0;
+}
+
+/* line 220, ../sass/myStyle.scss */
+.image.feature img {
+  display: block;
+  width: 100%;
+}
+
+/* Icon */
+/* line 227, ../sass/myStyle.scss */
+.icon {
+  position: relative;
+}
+
+/* line 231, ../sass/myStyle.scss */
+.icon:before {
+  content: "";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+/* line 241, ../sass/myStyle.scss */
+.icon > .label {
+  display: none;
+}
+
+/* Lists */
+/* line 247, ../sass/myStyle.scss */
+ol.default {
+  list-style: decimal;
+  padding-left: 1.25em;
+}
+
+/* line 252, ../sass/myStyle.scss */
+ol.default li {
+  padding-left: 0.25em;
+}
+
+/* line 256, ../sass/myStyle.scss */
+ul.default {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 262, ../sass/myStyle.scss */
+ul.default li {
+  padding: 0.40em 0em;
+}
+
+/* line 266, ../sass/myStyle.scss */
+ul.icons {
+  cursor: default;
+  padding-bottom: 2em;
+}
+
+/* line 271, ../sass/myStyle.scss */
+ul.icons li {
+  display: inline-block;
+  line-height: 1em;
+  padding: 0.5em 1em;
+}
+
+/* line 277, ../sass/myStyle.scss */
+ul.icons li:first-child {
+  padding-left: 0;
+}
+
+/* line 281, ../sass/myStyle.scss */
+ul.icons li span {
+  display: none;
+}
+
+/* line 285, ../sass/myStyle.scss */
+ul.icons li a {
+  text-decoration: none;
+  font-size: 2em;
+  color: inherit;
+  opacity: 0.2;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 297, ../sass/myStyle.scss */
+ul.icons li a:hover {
+  color: inherit;
+  opacity: 1;
+}
+
+/* line 303, ../sass/myStyle.scss */
+ul.sponsor {
+  cursor: default;
+  padding-bottom: 2em;
+}
+
+/* line 308, ../sass/myStyle.scss */
+ul.sponsor li {
+  display: inline-block;
+  line-height: 1em;
+  padding: 0.5em 1em;
+}
+
+/* line 314, ../sass/myStyle.scss */
+ul.sponsor li:first-child {
+  padding-left: 0;
+}
+
+/* line 318, ../sass/myStyle.scss */
+ul.sponsor li span {
+  display: none;
+}
+
+/* line 322, ../sass/myStyle.scss */
+ul.sponsor li a {
+  text-decoration: none;
+  font-size: 2em;
+  color: inherit;
+  opacity: 1.0;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 334, ../sass/myStyle.scss */
+ul.sponsor li a:hover {
+  color: inherit;
+  opacity: 0.8;
+}
+
+/* line 339, ../sass/myStyle.scss */
+ul.icons_contact {
+  cursor: default;
+  padding-bottom: 2em;
+}
+
+/* line 344, ../sass/myStyle.scss */
+ul.icons_contact li {
+  display: inline-block;
+  line-height: 1em;
+  padding: 0.5em 1em;
+}
+
+/* line 350, ../sass/myStyle.scss */
+ul.icons_contact li:first-child {
+  padding-left: 0;
+}
+
+/* line 354, ../sass/myStyle.scss */
+ul.icons_contact li span {
+  /*display: none;*/
+}
+
+/* line 358, ../sass/myStyle.scss */
+ul.icons_contact li a {
+  text-decoration: none;
+  font-size: 2em;
+  color: inherit;
+  opacity: 0.7;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 370, ../sass/myStyle.scss */
+ul.icons_contact li a:hover {
+  color: inherit;
+  opacity: 1;
+}
+
+/* line 375, ../sass/myStyle.scss */
+ul.actions {
+  cursor: default;
+}
+
+/* line 379, ../sass/myStyle.scss */
+ul.actions:last-child {
+  margin-bottom: 0;
+}
+
+/* line 383, ../sass/myStyle.scss */
+ul.actions li {
+  display: inline-block;
+  padding: 0 0 0 1.5em;
+}
+
+/* line 388, ../sass/myStyle.scss */
+ul.actions li:first-child {
+  padding: 0;
+}
+
+/* line 392, ../sass/myStyle.scss */
+ul.actions.vertical li {
+  display: block;
+  padding: 1.5em 0 0 0;
+}
+
+/* line 397, ../sass/myStyle.scss */
+ul.actions.vertical li:first-child {
+  padding: 0;
+}
+
+/* line 401, ../sass/myStyle.scss */
+ul.special-icons {
+  margin: 0em;
+  padding: 0em;
+}
+
+/* line 406, ../sass/myStyle.scss */
+ul.special-icons > li {
+  position: relative;
+  padding: 0.50em 0em 0.50em 0em;
+}
+
+/* line 411, ../sass/myStyle.scss */
+ul.special-icons > li:before {
+  position: absolute;
+  left: 0;
+  top: 2em;
+  display: block;
+  background: none;
+  font-size: 2em;
+  border-radius: 5px;
+}
+
+/* line 421, ../sass/myStyle.scss */
+ul.special-icons > li:first-child {
+  border-top: none;
+}
+
+/* line 425, ../sass/myStyle.scss */
+ul.special-icons h3 {
+  margin-bottom: 0.80em;
+  line-height: 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* line 433, ../sass/myStyle.scss */
+ul.special-icons span {
+  line-height: 190%;
+}
+
+/* line 437, ../sass/myStyle.scss */
+ul.special-icons .fa {
+  float: left;
+  display: inline-block;
+  padding-right: 1em;
+  font-size: 1.4em;
+  color: #002395;
+}
+
+/* line 445, ../sass/myStyle.scss */
+ul.special-icons p {
+  padding-left: 2.7em;
+}
+
+/* Tables */
+/* line 451, ../sass/myStyle.scss */
+table {
+  width: 100%;
+}
+
+/* line 455, ../sass/myStyle.scss */
+table.default {
+  width: 100%;
+}
+
+/* line 459, ../sass/myStyle.scss */
+table.default tbody tr {
+  border-bottom: solid 1px #002395;
+}
+
+/* line 463, ../sass/myStyle.scss */
+table.default td {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+/* line 467, ../sass/myStyle.scss */
+table.default th {
+  font-weight: 700;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: left;
+}
+
+/* line 473, ../sass/myStyle.scss */
+table.default thead {
+  background: #555555;
+  color: #fff;
+}
+
+/* Button */
+/* line 480, ../sass/myStyle.scss */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  border-radius: none;
+  border: 2px solid;
+  border-color: #002395;
+  color: #002395;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.90em 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 509, ../sass/myStyle.scss */
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:hover {
+  background: #002395;
+  color: white;
+}
+
+/* line 517, ../sass/myStyle.scss */
+input[type="submit"].alt,
+input[type="reset"].alt,
+input[type="button"].alt,
+.button.alt {
+  border-color: inherit;
+  color: inherit;
+}
+
+/* line 525, ../sass/myStyle.scss */
+input[type="submit"].alt:hover,
+input[type="reset"].alt:hover,
+input[type="button"].alt:hover,
+.button.alt:hover {
+  background: white;
+  color: #002395;
+}
+
+/* line 533, ../sass/myStyle.scss */
+input[type="submit"].fit,
+input[type="reset"].fit,
+input[type="button"].fit,
+.button.fit {
+  width: 100%;
+}
+
+/* line 540, ../sass/myStyle.scss */
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+.button.small {
+  font-size: 0.8em;
+}
+
+/* Wrapper */
+/* line 549, ../sass/myStyle.scss */
+.wrapper {
+  padding: 6em 0em 4em 0em;
+}
+
+/* line 553, ../sass/myStyle.scss */
+.wrapper.header {
+  padding: 0em;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  background-color: black;
+  width: 100%;
+}
+
+/* line 562, ../sass/myStyle.scss */
+.wrapper.banner {
+  padding: 0em;
+  height: 100vh;
+  background-color: white;
+}
+
+/* line 568, ../sass/myStyle.scss */
+.wrapper.banner > .container {
+  height: 100%;
+}
+
+/*
+		.wrapper.association {
+			background-color: orange;
+		}
+
+			.wrapper.association .major {
+				text-align: left !important;
+			}
+
+				.wrapper.association .major h2 {
+					display: block;
+					margin-bottom: 0.70em;
+					letter-spacing: 1px;
+					line-height: 1.4em;
+					text-transform: uppercase;
+					font-size: 1.8em;
+					font-weight: 400;
+				}
+
+				.wrapper.association .major .byline {
+					letter-spacing: normal;
+					line-height: 1.6em;
+					text-transform: capitalize;
+					font-size: 1.4em;
+				}
+
+			.wrapper.association h3 {
+				display: block;
+				margin-bottom: 1em;
+				letter-spacing: 1px;
+				line-height: 1.4em;
+				text-transform: uppercase;
+				font-size: 1.6em;
+				font-weight: 400;
+			}
+
+			.wrapper.association .image {
+				display: block;
+				width: 60%;
+				margin: 0em auto 2em auto;
+			}
+
+				.wrapper.association .image img {
+					border-radius: 50%;
+					border: 10px solid;
+					border-color: white;
+				}
+*/
+/* line 620, ../sass/myStyle.scss */
+.wrapper.association {
+  background: #002395;
+  text-align: center;
+  color: white;
+}
+
+/* line 626, ../sass/myStyle.scss */
+.wrapper.association .image {
+  display: block;
+  width: 60%;
+  margin: 0em auto 2em auto;
+}
+
+/* line 632, ../sass/myStyle.scss */
+.wrapper.association .image img {
+  border-radius: 50%;
+  border: 10px solid;
+  border-color: white;
+}
+
+/*
+		.wrapper.robocup {
+			padding-bottom: 6em;
+			background: $couleur-principale;
+			text-align: center;
+			color: white;
+		}
+
+			.wrapper.robocup .container {
+				padding-left: 6em;
+				padding-right: 6em;
+			}
+
+			.wrapper.robocup p {
+				text-align: justify;
+			}
+
+			.wrapper.robocup ul.special-icons .fa {
+				color: white;
+			}
+*/
+/* line 659, ../sass/myStyle.scss */
+.wrapper.robocup {
+  background: #f2f2f2;
+}
+
+/* line 663, ../sass/myStyle.scss */
+.wrapper.robocup .major {
+  text-align: left !important;
+}
+
+/* line 667, ../sass/myStyle.scss */
+.wrapper.robocup .major h2 {
+  display: block;
+  margin-bottom: 0.70em;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+/* line 677, ../sass/myStyle.scss */
+.wrapper.robocup .major .byline {
+  letter-spacing: normal;
+  line-height: 1.6em;
+  text-transform: capitalize;
+  font-size: 1.4em;
+}
+
+/* line 684, ../sass/myStyle.scss */
+.wrapper.robocup h3 {
+  display: block;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+/* line 694, ../sass/myStyle.scss */
+.wrapper.logistic {
+  padding-bottom: 6em;
+  background: #002395;
+  text-align: center;
+  color: white;
+}
+
+/* line 701, ../sass/myStyle.scss */
+.wrapper.logistic .container {
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+/* line 706, ../sass/myStyle.scss */
+.wrapper.logistic p {
+  /*font-size: 1.6em;*/
+  text-align: justify;
+}
+
+/* line 711, ../sass/myStyle.scss */
+.wrapper.project {
+  background: white;
+}
+
+/* line 715, ../sass/myStyle.scss */
+.wrapper.footer {
+  background: grey;
+}
+
+/* Header */
+/* line 721, ../sass/myStyle.scss */
+#header {
+  color: white;
+  height: 4em;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 727, ../sass/myStyle.scss */
+#header .container {
+  position: relative;
+}
+
+/* line 731, ../sass/myStyle.scss */
+.homepage #logo {
+  display: none;
+}
+
+/* line 735, ../sass/myStyle.scss */
+.homepage #main-nav {
+  position: relative;
+  right: none;
+  text-align: center;
+}
+
+/* line 741, ../sass/myStyle.scss */
+#logo {
+  line-height: 2em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+/* line 749, ../sass/myStyle.scss */
+#logo h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 755, ../sass/myStyle.scss */
+#logo a {
+  color: inherit;
+}
+
+/* line 759, ../sass/myStyle.scss */
+#main-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 765, ../sass/myStyle.scss */
+#main-nav > ul {
+  margin: 0;
+}
+
+/* line 769, ../sass/myStyle.scss */
+#main-nav > ul a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+/* line 774, ../sass/myStyle.scss */
+#main-nav > ul > li {
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 0.5em;
+  padding: 0 0.5em;
+}
+
+/* line 781, ../sass/myStyle.scss */
+#main-nav > ul > li a {
+  color: inherit;
+  line-height: 4em;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* line 791, ../sass/myStyle.scss */
+#main-nav > ul > li:first-child {
+  margin-left: 0;
+}
+
+/* line 795, ../sass/myStyle.scss */
+#main-nav > ul > li.active a {
+  color: white;
+  font-weight: bold;
+}
+
+/* line 800, ../sass/myStyle.scss */
+#main-nav > ul > li > ul {
+  display: none;
+}
+
+/* Dropotron */
+/* line 806, ../sass/myStyle.scss */
+.dropotron {
+  top: 2em;
+  background: rgba(32, 32, 32, 0.75);
+  border-radius: 4px;
+  color: inherit;
+  min-width: 12em;
+  padding: 1em 0;
+  color: white;
+}
+
+/* line 816, ../sass/myStyle.scss */
+.dropotron > li {
+  line-height: 2em;
+  padding: 0 1em;
+}
+
+/* line 821, ../sass/myStyle.scss */
+.dropotron > li > a {
+  color: inherit;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 828, ../sass/myStyle.scss */
+.dropotron > li.active > a, .dropotron > li:hover > a {
+  color: inherit;
+}
+
+/* line 832, ../sass/myStyle.scss */
+.dropotron.level-0 {
+  border-radius: 0 0 4px 4px;
+  font-size: 1em;
+  margin-left: -0.5em;
+}
+
+/* Banner */
+/* line 840, ../sass/myStyle.scss */
+#banner {
+  padding: 6em 0em 3em 0em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background: #FFFFFF url(../images/arpl/logo_wide.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 100%;
+}
+
+/* line 851, ../sass/myStyle.scss */
+#banner .container {
+  padding: 0em 8em;
+}
+
+/* line 855, ../sass/myStyle.scss */
+#banner h2 {
+  display: inline-block;
+  padding: 0.50em 0.30em;
+  background: #002395;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+/* line 863, ../sass/myStyle.scss */
+#banner span, #banner p {
+  display: block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+/* line 871, ../sass/myStyle.scss */
+#banner span {
+  padding: 1em 0em;
+}
+
+/* Main */
+/* line 877, ../sass/myStyle.scss */
+#main {
+  padding: 4em 0;
+}
+
+/* line 881, ../sass/myStyle.scss */
+#main #content .major, #main #sidebar .major {
+  text-align: left;
+}
+
+/* line 885, ../sass/myStyle.scss */
+#main #sidebar section {
+  margin-top: 4em;
+}
+
+/* line 889, ../sass/myStyle.scss */
+#main #sidebar section:first-child {
+  margin-top: 0;
+}
+
+/* line 893, ../sass/myStyle.scss */
+#main #sidebar .major {
+  padding-bottom: 2em;
+}
+
+/* line 897, ../sass/myStyle.scss */
+#main #sidebar .major h2 {
+  font-size: 1.8em;
+}
+
+/* Footer */
+/* line 903, ../sass/myStyle.scss */
+#footer {
+  padding: 6em 0 2em 0;
+  text-align: center;
+  color: white;
+}
+
+/* line 909, ../sass/myStyle.scss */
+#footer hr {
+  border-bottom: 1px solid;
+  border-color: inherit;
+  opacity: .05;
+}
+
+/* line 915, ../sass/myStyle.scss */
+#footer .major h2 {
+  color: inherit;
+}
+
+/* line 919, ../sass/myStyle.scss */
+#footer .major .byline {
+  color: inherit;
+  opacity: .4;
+}
+
+/* line 924, ../sass/myStyle.scss */
+#footer .copyright {
+  margin-top: 3em;
+  text-align: center;
+}
+
+/* Copyright */
+/* line 931, ../sass/myStyle.scss */
+#copyright {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3em 0em 3em 0em;
+  color: inherit;
+  opacity: .40;
+}
+
+/* line 940, ../sass/myStyle.scss */
+#copyright a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Extra */
+/* line 947, ../sass/myStyle.scss */
+#extra1 h2 {
+  display: block;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+/* line 957, ../sass/myStyle.scss */
+#extra1 h3 {
+  display: block;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+/* Team */
+/* line 969, ../sass/myStyle.scss */
+#team h3 {
+  margin-bottom: 0.50em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
