@@ -860,12 +860,11 @@ input[type="button"].small,
 }
 
 /* line 769, ../sass/myStyle.scss */
-#main-nav > ul a:hover {
-  color: white;
-  font-weight: bold;
+#main-nav a:hover {
+  text-decoration: underline;
 }
 
-/* line 774, ../sass/myStyle.scss */
+/* line 773, ../sass/myStyle.scss */
 #main-nav > ul > li {
   border-radius: 4px;
   display: inline-block;
@@ -873,7 +872,7 @@ input[type="button"].small,
   padding: 0 0.5em;
 }
 
-/* line 781, ../sass/myStyle.scss */
+/* line 780, ../sass/myStyle.scss */
 #main-nav > ul > li a {
   color: inherit;
   line-height: 4em;
@@ -884,24 +883,28 @@ input[type="button"].small,
   font-size: 1em;
 }
 
-/* line 791, ../sass/myStyle.scss */
+/* line 790, ../sass/myStyle.scss */
 #main-nav > ul > li:first-child {
   margin-left: 0;
 }
 
-/* line 795, ../sass/myStyle.scss */
+/* line 794, ../sass/myStyle.scss */
 #main-nav > ul > li.active a {
   color: white;
-  font-weight: bold;
 }
 
-/* line 800, ../sass/myStyle.scss */
+/* line 798, ../sass/myStyle.scss */
+#main-nav > ul > li.active a:hover {
+  color: white;
+}
+
+/* line 802, ../sass/myStyle.scss */
 #main-nav > ul > li > ul {
   display: none;
 }
 
 /* Dropotron */
-/* line 806, ../sass/myStyle.scss */
+/* line 808, ../sass/myStyle.scss */
 .dropotron {
   top: 2em;
   background: rgba(32, 32, 32, 0.75);
@@ -912,13 +915,13 @@ input[type="button"].small,
   color: white;
 }
 
-/* line 816, ../sass/myStyle.scss */
+/* line 818, ../sass/myStyle.scss */
 .dropotron > li {
   line-height: 2em;
   padding: 0 1em;
 }
 
-/* line 821, ../sass/myStyle.scss */
+/* line 823, ../sass/myStyle.scss */
 .dropotron > li > a {
   color: inherit;
   letter-spacing: 2px;
@@ -926,12 +929,13 @@ input[type="button"].small,
   text-transform: uppercase;
 }
 
-/* line 828, ../sass/myStyle.scss */
+/* line 830, ../sass/myStyle.scss */
 .dropotron > li.active > a, .dropotron > li:hover > a {
   color: inherit;
+  text-decoration: underline;
 }
 
-/* line 832, ../sass/myStyle.scss */
+/* line 835, ../sass/myStyle.scss */
 .dropotron.level-0 {
   border-radius: 0 0 4px 4px;
   font-size: 1em;
@@ -939,24 +943,31 @@ input[type="button"].small,
 }
 
 /* Banner */
-/* line 840, ../sass/myStyle.scss */
+/* line 843, ../sass/myStyle.scss */
 #banner {
-  padding: 6em 0em 3em 0em;
+  padding: 0;
   text-align: center;
   text-transform: uppercase;
   color: white;
   background: #FFFFFF url(../images/arpl/logo_wide.png) no-repeat;
   background-size: 100%;
-  background-position: center;
+  background-position: center center;
   height: 100%;
 }
 
-/* line 851, ../sass/myStyle.scss */
+/* line 853, ../sass/myStyle.scss */
+#banner.pyro {
+  background: #FFFFFF url(../images/pyro/logo_txt.png) no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+
+/* line 860, ../sass/myStyle.scss */
 #banner .container {
   padding: 0em 8em;
 }
 
-/* line 855, ../sass/myStyle.scss */
+/* line 864, ../sass/myStyle.scss */
 #banner h2 {
   display: inline-block;
   padding: 0.50em 0.30em;
@@ -965,7 +976,7 @@ input[type="button"].small,
   font-weight: 400;
 }
 
-/* line 863, ../sass/myStyle.scss */
+/* line 872, ../sass/myStyle.scss */
 #banner span, #banner p {
   display: block;
   letter-spacing: 1px;
@@ -974,76 +985,76 @@ input[type="button"].small,
   font-weight: 300;
 }
 
-/* line 871, ../sass/myStyle.scss */
+/* line 880, ../sass/myStyle.scss */
 #banner span {
   padding: 1em 0em;
 }
 
 /* Main */
-/* line 877, ../sass/myStyle.scss */
+/* line 886, ../sass/myStyle.scss */
 #main {
   padding: 4em 0;
 }
 
-/* line 881, ../sass/myStyle.scss */
+/* line 890, ../sass/myStyle.scss */
 #main #content .major, #main #sidebar .major {
   text-align: left;
 }
 
-/* line 885, ../sass/myStyle.scss */
+/* line 894, ../sass/myStyle.scss */
 #main #sidebar section {
   margin-top: 4em;
 }
 
-/* line 889, ../sass/myStyle.scss */
+/* line 898, ../sass/myStyle.scss */
 #main #sidebar section:first-child {
   margin-top: 0;
 }
 
-/* line 893, ../sass/myStyle.scss */
+/* line 902, ../sass/myStyle.scss */
 #main #sidebar .major {
   padding-bottom: 2em;
 }
 
-/* line 897, ../sass/myStyle.scss */
+/* line 906, ../sass/myStyle.scss */
 #main #sidebar .major h2 {
   font-size: 1.8em;
 }
 
 /* Footer */
-/* line 903, ../sass/myStyle.scss */
+/* line 912, ../sass/myStyle.scss */
 #footer {
   padding: 6em 0 2em 0;
   text-align: center;
   color: white;
 }
 
-/* line 909, ../sass/myStyle.scss */
+/* line 918, ../sass/myStyle.scss */
 #footer hr {
   border-bottom: 1px solid;
   border-color: inherit;
   opacity: .05;
 }
 
-/* line 915, ../sass/myStyle.scss */
+/* line 924, ../sass/myStyle.scss */
 #footer .major h2 {
   color: inherit;
 }
 
-/* line 919, ../sass/myStyle.scss */
+/* line 928, ../sass/myStyle.scss */
 #footer .major .byline {
   color: inherit;
   opacity: .4;
 }
 
-/* line 924, ../sass/myStyle.scss */
+/* line 933, ../sass/myStyle.scss */
 #footer .copyright {
   margin-top: 3em;
   text-align: center;
 }
 
 /* Copyright */
-/* line 931, ../sass/myStyle.scss */
+/* line 940, ../sass/myStyle.scss */
 #copyright {
   position: relative;
   text-transform: uppercase;
@@ -1053,14 +1064,14 @@ input[type="button"].small,
   opacity: .40;
 }
 
-/* line 940, ../sass/myStyle.scss */
+/* line 949, ../sass/myStyle.scss */
 #copyright a {
   text-decoration: none;
   color: inherit;
 }
 
 /* Extra */
-/* line 947, ../sass/myStyle.scss */
+/* line 956, ../sass/myStyle.scss */
 #extra1 h2 {
   display: block;
   margin-bottom: 1em;
@@ -1071,7 +1082,7 @@ input[type="button"].small,
   font-weight: 400;
 }
 
-/* line 957, ../sass/myStyle.scss */
+/* line 966, ../sass/myStyle.scss */
 #extra1 h3 {
   display: block;
   margin-bottom: 1em;
@@ -1083,7 +1094,7 @@ input[type="button"].small,
 }
 
 /* Team */
-/* line 969, ../sass/myStyle.scss */
+/* line 978, ../sass/myStyle.scss */
 #team h3 {
   margin-bottom: 0.50em;
   letter-spacing: 2px;
