@@ -1,6 +1,6 @@
-/* Imports */
 @import url("font-awesome.css");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+/* Imports */
 /* Colors */
 /* Basic */
 /* line 17, ../sass/myStyle.scss */
@@ -149,7 +149,7 @@ footer.major {
 }
 
 /* Form */
-/* line 141, ../sass/myStyle.scss */
+/* line 144, ../sass/myStyle.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -169,7 +169,7 @@ textarea {
   width: 100%;
 }
 
-/* line 160, ../sass/myStyle.scss */
+/* line 163, ../sass/myStyle.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -177,7 +177,7 @@ textarea:focus {
   border-color: #002395;
 }
 
-/* line 167, ../sass/myStyle.scss */
+/* line 169, ../sass/myStyle.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"] {
@@ -540,7 +540,7 @@ table.default thead {
 }
 
 /* Button */
-/* line 480, ../sass/myStyle.scss */
+/* line 483, ../sass/myStyle.scss */
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -570,7 +570,7 @@ input[type="button"],
   transition: all 0.35s ease-in-out;
 }
 
-/* line 509, ../sass/myStyle.scss */
+/* line 512, ../sass/myStyle.scss */
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
@@ -579,7 +579,7 @@ input[type="button"]:hover,
   color: white;
 }
 
-/* line 517, ../sass/myStyle.scss */
+/* line 520, ../sass/myStyle.scss */
 input[type="submit"].alt,
 input[type="reset"].alt,
 input[type="button"].alt,
@@ -588,7 +588,7 @@ input[type="button"].alt,
   color: inherit;
 }
 
-/* line 525, ../sass/myStyle.scss */
+/* line 528, ../sass/myStyle.scss */
 input[type="submit"].alt:hover,
 input[type="reset"].alt:hover,
 input[type="button"].alt:hover,
@@ -597,7 +597,7 @@ input[type="button"].alt:hover,
   color: #002395;
 }
 
-/* line 533, ../sass/myStyle.scss */
+/* line 536, ../sass/myStyle.scss */
 input[type="submit"].fit,
 input[type="reset"].fit,
 input[type="button"].fit,
@@ -605,7 +605,7 @@ input[type="button"].fit,
   width: 100%;
 }
 
-/* line 540, ../sass/myStyle.scss */
+/* line 543, ../sass/myStyle.scss */
 input[type="submit"].small,
 input[type="reset"].small,
 input[type="button"].small,
@@ -636,7 +636,7 @@ input[type="button"].small,
   background-color: white;
 }
 
-/* line 568, ../sass/myStyle.scss */
+/* line 569, ../sass/myStyle.scss */
 .wrapper.banner > .container {
   height: 100%;
 }
@@ -949,15 +949,15 @@ input[type="button"].small,
   text-align: center;
   text-transform: uppercase;
   color: white;
-  background: #FFFFFF url(../images/arpl/logo_wide.png) no-repeat;
+  background: white url(../images/arpl/logo_wide.png) no-repeat;
   background-size: 100%;
   background-position: center center;
   height: 100%;
 }
 
-/* line 853, ../sass/myStyle.scss */
+/* line 854, ../sass/myStyle.scss */
 #banner.pyro {
-  background: #FFFFFF url(../images/pyro/logo_txt.png) no-repeat;
+  background: white url(../images/pyro/logo_txt.png) no-repeat;
   background-size: 100%;
   background-position: center center;
 }
