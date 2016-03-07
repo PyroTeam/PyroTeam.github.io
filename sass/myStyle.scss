@@ -15,7 +15,9 @@ $bleu-polytech-3: #C5EFFC;
 $rouge-polytech: #F92D24;
 $rouge-polytech-bde-lille: #FF2D30;
 
-$couleur-principale: $bleu-france;
+$couleur-principale: $bleu-polytech-1;
+$couleur-fond-1: #F2F2F2;
+$couleur-fond-2: $bleu-polytech-2;
 $body-background: $old-body_background;
 
 /* Basic */
@@ -560,7 +562,7 @@ $body-background: $old-body_background;
 			position: fixed;
 			z-index: 10;
 			top: 0;
-			background-color: black;
+			background-color: $old-body_background;
 			width: 100%;
 		}
 
@@ -623,7 +625,7 @@ $body-background: $old-body_background;
 				}
 */
 		.wrapper.association {
-			background: #002395;
+			background: $couleur-fond-2;
 			text-align: center;
 			color: white;
 		}
@@ -662,7 +664,7 @@ $body-background: $old-body_background;
 */
 	
 		.wrapper.robocup {
-			background: #f2f2f2;
+			background: $couleur-fond-1;
 		}
 
 			.wrapper.robocup .major {
@@ -698,7 +700,7 @@ $body-background: $old-body_background;
 
 		.wrapper.logistic {
 			padding-bottom: 6em;
-			background: #002395;
+			background: $couleur-fond-2;
 			text-align: center;
 			color: white;
 		}
@@ -714,7 +716,7 @@ $body-background: $old-body_background;
 			}
 
 		.wrapper.project {
-			background: white;
+			background: $couleur-fond-1;
 		}
 
 		.wrapper.footer {
@@ -765,14 +767,22 @@ $body-background: $old-body_background;
 		position: absolute;
 		top: 0;
 		right: 0;
+		color: white;
 	}
 
 		#main-nav > ul {
 			margin: 0;
 		}
+			#main-nav a {
+				font-weight: normal;
+			}
 
 			#main-nav a:hover {
 				text-decoration: underline;
+			}
+
+			#main-nav a.current {
+				font-weight: bold;
 			}
 
 			#main-nav > ul > li {
