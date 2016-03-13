@@ -10,8 +10,8 @@ branches:
 
 script :
 # Do nothing
-- echo "Don't Worry, Be Happy" > tmp.txt
+- echo -e "Directory pushed on $(date)" > ci-travis_info.txt
 
 after_success:
 # Deploy website
-- "curl --ftp-create-dirs -T tmp.txt -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_URL/www/test/"
+- "curl --ftp-create-dirs -T * -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_URL/www/test/"
