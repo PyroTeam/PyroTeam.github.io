@@ -9,6 +9,7 @@ branches:
     - /.*\/ci-travis\/.*/
 
 script :
+- cd $TRAVIS_BUILD_DIR
 # Do nothing
 - echo -e "Directory pushed on $(date)" > ci-travis_info.txt
 
