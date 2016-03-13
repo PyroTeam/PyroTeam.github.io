@@ -15,6 +15,6 @@ script :
 
 after_success:
 # Deploy website
-- echo 'curl --ftp-create-dirs -T $1 -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_URL/www/test/$(dirname $1)/' > tmp_script.sh
+- echo 'curl --ftp-create-dirs -T $1 -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_URL/www/$(dirname $1)/' > tmp_script.sh
 - chmod +x tmp_script.sh
 - find . -type f -not -path '*/sass/*' -not -name 'config.rb' -not -name 'tmp_script.sh' -not -path '*/\.*' -exec "./tmp_script.sh" {} \;
