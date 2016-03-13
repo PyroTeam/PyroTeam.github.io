@@ -1,0 +1,17 @@
+# Work on a trusty VM
+sudo: required
+dist: trusty
+
+# Allow only arpl-website branch (not arpl-website.dev) and branches containing a */ci-travis/* part
+branches:
+  only:
+    - arpl-website
+    - /.*\/ci-travis\/.*/
+
+script :
+# Do nothing
+- echo "Don't Worry, Be Happy" > tmp.txt
+
+after_success:
+# Deploy website
+- "curl --ftp-create-dirs -T tmp.txt -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_URL/www/test/"
