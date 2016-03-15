@@ -689,6 +689,10 @@ $body-background: $old-body_background;
 					font-size: 1.4em;
 				}
 
+			.wrapper.robocup ul {
+				list-style-type: none;
+			}
+
 			.wrapper.robocup h3 {
 				display: block;
 				margin-bottom: 1em;
@@ -829,6 +833,7 @@ $body-background: $old-body_background;
 		min-width: 12em;
 		padding: 1em 0;
 		color: white;
+		list-style-type: none;
 	}
 
 		.dropotron > li {
