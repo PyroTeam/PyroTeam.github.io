@@ -1,0 +1,20 @@
+# Work on a trusty VM
+sudo: required
+dist: trusty
+
+# Allow only arpl-website branch (not arpl-website.dev) and branches containing a */ci-travis/* part
+branches:
+  only:
+    - arpl-website
+    - /.*\/ci-travis\/.*/
+
+script :
+- cd $TRAVIS_BUILD_DIR
+# Do nothing
+- echo -e "Directory pushed on $(date)" > ci-travis_info.txt
+
+after_success:
+# Deploy website
+- echo 'curl --ftp-create-dirs -T $1 -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_URL/www/$(dirname $1)/' > tmp_script.sh
+- chmod +x tmp_script.sh
+- find . -type f -not -path '*/sass/*' -not -name 'config.rb' -not -name 'tmp_script.sh' -not -path '*/\.*' -exec "./tmp_script.sh" {} \;

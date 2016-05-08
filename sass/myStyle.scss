@@ -1,20 +1,29 @@
-@import url("font-awesome.min.css");
+/* Imports */
+@import url("font-awesome.css");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 
-/*
-	Solarize by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+/* Colors */
+// Old
+$old-bleu: #2A4770;
+$old-body_background: #222222;
 
-/*#2A4770  BLEU ORIGINEL*/
-/*#002395  BLEU FRANCE*/
+// New
+$bleu-france: #002395;
+$bleu-polytech-1: #00B8F1;
+$bleu-polytech-2: #004874;
+$bleu-polytech-3: #C5EFFC;
+$rouge-polytech: #F92D24;
+$rouge-polytech-bde-lille: #FF2D30;
+$vert-bleu: rgb(19, 115, 133);
 
+$couleur-principale: $bleu-polytech-1;
+$couleur-fond-1: #F2F2F2;
+$couleur-fond-2: $bleu-polytech-2;
+$body-background: $old-body_background;
 
 /* Basic */
-
 	body {
-		background: #222222;
+		background: $body-background;
 	}
 
 		body.loading * {
@@ -39,7 +48,7 @@
 	}
 
 	a {
-		color: #002395;
+		color: $couleur-principale;
 		text-decoration: underline;
 	}
 
@@ -94,13 +103,13 @@
 	}
 
 	hr {
-		border-top: solid 1px #002395;
+		border-top: solid 1px $couleur-principale;
 		border: 0;
 		margin-bottom: 1.5em;
 	}
 
 	blockquote {
-		border-left: solid 0.5em #002395;
+		border-left: solid 0.5em $couleur-principale;
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
@@ -147,7 +156,7 @@
 		-ms-appearance: none;
 		appearance: none;
 		background: none;
-		border: solid 1px #002395;
+		border: solid 1px $couleur-principale;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -160,7 +169,7 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #002395;
+			border-color: $couleur-principale;
 		}
 
 	input[type="text"],
@@ -438,7 +447,7 @@
 			display: inline-block;
 			padding-right: 1em;
 			font-size: 1.4em;
-			color: #002395;
+			color: $couleur-principale;
 		}
 
 		ul.special-icons p {
@@ -456,7 +465,7 @@
 		}
 
 			table.default tbody tr {
-				border-bottom: solid 1px #002395;
+				border-bottom: solid 1px $couleur-principale;
 			}
 
 			table.default td {
@@ -488,8 +497,8 @@
 		background: none;
 		border-radius: none;
 		border: 2px solid;
-		border-color: #002395;
-		color: #002395;
+		border-color: $couleur-principale;
+		color: $couleur-principale;
 		cursor: pointer;
 		display: inline-block;
 		padding: 0.90em 1.2em;
@@ -509,7 +518,7 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background: #002395;
+			background: $couleur-principale;
 			color: white;
 		}
 
@@ -526,7 +535,7 @@
 			input[type="button"].alt:hover,
 			.button.alt:hover {
 				background: white;
-				color: #002395;
+				color: $couleur-principale;
 			}
 
 		input[type="submit"].fit,
@@ -551,16 +560,26 @@
 
 		.wrapper.header {
 			padding: 0em;
+			position: fixed;
+			z-index: 10;
+			top: 0;
+			background-color: $old-body_background;
+			width: 100%;
 		}
 
 		.wrapper.banner {
 			padding: 0em;
-			background: #FFFFFF url(../images/arpl/logo_wide.png) no-repeat;
-			background-size: cover;
+			height: 100vh;
+			background-color: white;
 		}
 
-		.wrapper.associaiton {
-			background: #f2f2f2;
+			.wrapper.banner > .container
+			{
+				height: 100%;
+			}
+/*
+		.wrapper.association {
+			background-color: orange;
 		}
 
 			.wrapper.association .major {
@@ -594,9 +613,39 @@
 				font-weight: 400;
 			}
 
+			.wrapper.association .image {
+				display: block;
+				width: 60%;
+				margin: 0em auto 2em auto;
+			}
+
+				.wrapper.association .image img {
+					border-radius: 50%;
+					border: 10px solid;
+					border-color: white;
+				}
+*/
+		.wrapper.association {
+			background: $couleur-fond-2;
+			text-align: center;
+			color: white;
+		}
+
+			.wrapper.association .image {
+				display: block;
+				width: 60%;
+				margin: 0em auto 2em auto;
+			}
+
+				.wrapper.association .image img {
+					border-radius: 50%;
+					border: 10px solid;
+					border-color: white;
+				}
+/*
 		.wrapper.robocup {
 			padding-bottom: 6em;
-			background: #002395;
+			background: $couleur-principale;
 			text-align: center;
 			color: white;
 		}
@@ -607,31 +656,77 @@
 			}
 
 			.wrapper.robocup p {
-				/*font-size: 1.6em;*/
 				text-align: justify;
 			}
 
-		.wrapper.style4 {
-			background: white;
+			.wrapper.robocup ul.special-icons .fa {
+				color: white;
+			}
+*/
+	
+		.wrapper.robocup {
+			background: $couleur-fond-1;
 		}
 
-		.wrapper.style5 {
-			background: #002395;
+			.wrapper.robocup .major {
+				text-align: left !important;
+			}
+
+				.wrapper.robocup .major h2 {
+					display: block;
+					margin-bottom: 0.70em;
+					letter-spacing: 1px;
+					line-height: 1.4em;
+					text-transform: uppercase;
+					font-size: 1.8em;
+					font-weight: 400;
+				}
+
+				.wrapper.robocup .major .byline {
+					letter-spacing: normal;
+					line-height: 1.6em;
+					text-transform: capitalize;
+					font-size: 1.4em;
+				}
+
+			.wrapper.robocup ul {
+				list-style-type: none;
+			}
+
+			.wrapper.robocup h3 {
+				display: block;
+				margin-bottom: 1em;
+				letter-spacing: 1px;
+				line-height: 1.4em;
+				text-transform: uppercase;
+				font-size: 1.6em;
+				font-weight: 400;
+			}
+
+		.wrapper.logistic {
+			padding-bottom: 6em;
+			background: $couleur-fond-2;
 			text-align: center;
 			color: white;
 		}
 
-			.wrapper.style5 .image {
-				display: block;
-				width: 60%;
-				margin: 0em auto 2em auto;
+			.wrapper.logistic .container {
+				padding-left: 6em;
+				padding-right: 6em;
 			}
 
-				.wrapper.style5 .image img {
-					border-radius: 50%;
-					border: 10px solid;
-					border-color: white;
-				}
+			.wrapper.logistic p {
+				/*font-size: 1.6em;*/
+				text-align: justify;
+			}
+
+		.wrapper.project {
+			background: $couleur-fond-1;
+		}
+
+		.wrapper.footer {
+			background: grey;
+		}
 
 /* Header */
 
@@ -649,8 +744,8 @@
 		display: none;
 	}
 
-	.homepage #nav {
-		position: static;
+	.homepage #main-nav {
+		position: relative;
 		right: none;
 		text-align: center;
 	}
@@ -673,24 +768,36 @@
 			color: inherit;
 		}
 
-	#nav {
+	#main-nav {
 		position: absolute;
 		top: 0;
 		right: 0;
+		color: white;
 	}
 
-		#nav > ul {
+		#main-nav > ul {
 			margin: 0;
 		}
+			#main-nav a {
+				font-weight: normal;
+			}
 
-			#nav > ul > li {
+			#main-nav a:hover {
+				text-decoration: underline;
+			}
+
+			#main-nav a.current {
+				font-weight: bold;
+			}
+
+			#main-nav > ul > li {
 				border-radius: 4px;
 				display: inline-block;
 				margin-left: 0.5em;
 				padding: 0 0.5em;
 			}
 
-				#nav > ul > li a {
+				#main-nav > ul > li a {
 					color: inherit;
 					line-height: 4em;
 					letter-spacing: 2px;
@@ -700,16 +807,19 @@
 					font-size: 1em;
 				}
 
-				#nav > ul > li:first-child {
+				#main-nav > ul > li:first-child {
 					margin-left: 0;
 				}
 
-				#nav > ul > li.active a {
+				#main-nav > ul > li.active a {
 					color: white;
-					font-weight: bold;
 				}
 
-				#nav > ul > li > ul {
+				#main-nav > ul > li.active a:hover {
+					color: white;
+				}
+
+				#main-nav > ul > li > ul {
 					display: none;
 				}
 
@@ -723,6 +833,7 @@
 		min-width: 12em;
 		padding: 1em 0;
 		color: white;
+		list-style-type: none;
 	}
 
 		.dropotron > li {
@@ -739,6 +850,7 @@
 
 			.dropotron > li.active > a, .dropotron > li:hover > a {
 				color: inherit;
+				text-decoration: underline;
 			}
 
 		.dropotron.level-0 {
@@ -750,11 +862,21 @@
 /* Banner */
 
 	#banner {
-		padding: 6em 0em 3em 0em;
+		padding: 0;
 		text-align: center;
 		text-transform: uppercase;
 		color: white;
+		background: #FFFFFF url(../images/arpl/logo_wide.png) no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		height: 100%;
 	}
+		#banner.pyro
+		{
+			background: #FFFFFF url(../images/pyro/logo_txt.png) no-repeat;
+			background-size: 100%;
+			background-position: center center;
+		}
 
 		#banner .container {
 			padding: 0em 8em;
@@ -763,7 +885,7 @@
 		#banner h2 {
 			display: inline-block;
 			padding: 0.50em 0.30em;
-			background: #002395;
+			background: $couleur-principale;
 			font-size: 3em;
 			font-weight: 400;
 		}
