@@ -23,7 +23,11 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.arpl.fr/docs/DossierSponsoring2016.pdf</loc>
+  <loc>http://www.arpl.fr/activities.html</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.arpl.fr/docs/DossierDeSponsoring.pdf</loc>
   <lastmod>2016-05-19T08:00:43+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
