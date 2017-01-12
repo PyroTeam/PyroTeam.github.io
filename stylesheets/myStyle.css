@@ -572,6 +572,7 @@ table.default thead {
 .wrapper.association #overview #bureau {
   font-size: 80pt;
   writing-mode: sideways-rl;
+  writing-mode: vertical-rl;
   -webkit-writing-mode: rl;
   white-space: nowrap;
   letter-spacing: 0.3em;
